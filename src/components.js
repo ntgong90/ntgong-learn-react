@@ -1,4 +1,6 @@
-import { useState } from 'react';
+  //useState is a Hook!
+import { useState } from 'react'; 
+
 export const Component1 = () => {
   let [text, displayText] = useState('starting text');
 
@@ -45,3 +47,5 @@ export const ChildComponent = () => {
       </div>
   );
 };
+
+export const listOfWords = ['test1','test2','test3','endOfArray']
