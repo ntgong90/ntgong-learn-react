@@ -7,13 +7,18 @@ import { useState} from "react";
 
 
 function App() {
-//let [text, handleClick] = Component1();
+let [text, handleClick] = useState('Component 3');
 //const [var1, event1] = useState('tes1')
+//let outputWords = listOfWords[1];
+
+function click(){
+  handleClick(text = text + ' test');
+}
 
   return(
       //Components must be placed in the HTML
     <div className="App">
-      <GithubLogo />
+      <GithubLogo/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Component1/>
@@ -21,7 +26,11 @@ function App() {
       
         <Counter/>
         {/* <ChildComponent/> */}
-        <listOfWords/>
+
+        <button onClick={click}>
+        Button 4
+      </button>
+        <p>{text}</p>
       </header>
     </div>
   );
